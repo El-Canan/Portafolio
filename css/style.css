@@ -84,6 +84,22 @@ body {
     /* tansicio de medio segundo */
     transition: 0.5s;
 }
+.nav-boton {
+    /* color del icono */
+    color: #f1faee;
+    /* quitar el fondo del boton */
+    background: none;
+    /* quitar el borde del boton */
+    border: none;
+    /* tmaño del icono para el boton */
+    font-size: 30px;
+    /* relleno del icono */
+    padding: 0 20px;
+    /* alto superior del icono */
+    line-height: 60px;
+    /* desaparece el icono en modo escritorio */
+    display: none;
+}
 /* estilo del contenedor principal */
 .container {
     width: 90%;
@@ -93,8 +109,8 @@ body {
 }
 /* estilo deacerca */
 .acerca-container {
-    margin-top: 60px;
-    border: 1px solid black;
+    /* margin-top: 60px; */
+    /* border: 1px solid black; */
 }
 /* estilo de habilidades*/
 /* estilo de proyectos */
@@ -115,3 +131,36 @@ footer {
 /* color rojo: e63946 */
 /* ------------------------------------------------------- */
 /* media query */
+@media (max-width: 768px) {
+    /* barra de navegacion modo tablet */
+    .nav-list {
+        /* direccion de la visualizacion */
+        flex-direction: column;
+        /* margenes */
+        margin: 0px;
+        /* color de fondo del menu lateral */
+        background-color: #1D3557;
+        /* posicion */
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 60px);
+        /* alineacion de los items */
+        align-items: center;
+        /* quitar relleno */
+        padding: 20px 0;
+        /* barra deslizadora lateral */
+        overflow-y: auto;
+    }
+    /* color de fondo al pasar el cursos por encima modo tablet */
+    .link-hover:hover {
+        /* quitamos el color de fondo en modo tablet */
+        background: none;
+        /* resaltamos el color del texto */
+        color: #457b9d;
+    }
+    .nav-boton {
+        display: block;
+    }
+}
