@@ -1,26 +1,53 @@
-/* estilos globales */
+/* estilo globales */
 * {
     margin: 0px;
-    padding: 0px;
+    /* padding: 0px; */
     box-sizing: border-box;
 }
-/* estilos por defecto para todo el cuerpo */
+/* estilo por defecto para todo el cuerpo */
 body {
     font-family: sans-serif;
+    /* border: 1px solid black; */
 }
-/* estilos de la barra de navegacion */
-.nav-container {
-    background-color: grey;
-    width: 90%;
-    margin: auto;
-}
+/* estilo de la barra de navegacion */
 .nav-menu {
     display: flex;
     justify-content: center;
+    border: 1px solid black;
 }
-ul {
+.nav-list {
     list-style: none;
+    display: flex;
 }
-a {
-    text-decoration: none;
+.nav-item {
+    border: 1px solid black;
 }
+/* estilo del contenedor principal */
+.container {
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+}
+/* estilo deacerca */
+.acerca-container {
+    border: 1px solid black;
+    
+}
+/* estilo de habilidades*/
+/* estilo de proyectos */
+/* estilo de contacto */
+/* estilo del footer */
+.foot-container {
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    background-color: lightslategrey;
+}
+footer {
+    /* background-color: red; */
+    margin: auto;
+    padding: 10px;
+}
+/* ------------------------------------------------------- */
+/* media query */
