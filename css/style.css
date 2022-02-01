@@ -1,5 +1,26 @@
+/* estilos globales */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+/* estilos por defecto para todo el cuerpo */
+body {
+    font-family: sans-serif;
+}
+/* estilos de la barra de navegacion */
+.nav-container {
+    background-color: grey;
+    width: 90%;
+    margin: auto;
+}
+.nav-menu {
+    display: flex;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
 }
