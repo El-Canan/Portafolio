@@ -24,14 +24,16 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
-    border: 1px solid black;
 }
 .nav-menu {
     /* tipo de visualizacion: flexible */
     display: flex;
     /* Distribuir items uniformemente: El primer item al inicio, el último al final */
     justify-content: space-between;
-    border: 1px solid black;
+    /* breakpoints */
+    max-width: 992px;
+    /* margenes lateral centrado */
+    margin: 0 auto;
 }
 .nav-list {
     /* tipo de visualizacion: flexible*/
@@ -40,8 +42,6 @@ body {
     margin-right: 40px;
     /* quitamos los puntos de los item de la lista */
     list-style: none;
-    border: 1px solid black;
-
 }
 .nav-item {
     /* tamaño de texto */
@@ -52,7 +52,8 @@ body {
     line-height: 60px;
     /* transforma el texto en mayusculas */
     text-transform: uppercase;
-    border: 1px solid black;
+    /* para que no se corte el contenido */
+    width: max-content;
 }
 .nav-logo {
     /* tamaño de fuente */
@@ -63,13 +64,25 @@ body {
     padding: 0 40px;
     /* alto superior del logo */
     line-height: 60px;
-    border: 1px solid black;
 }
 .nav-link {
     /* color de texto de los enlaces */
     color: #f1faee;
     /* eliminamos la decoracion del texto */
     text-decoration: none;
+    
+}
+.link-hover {
+    /* rellno de los links */
+    padding: 8px 12px;
+    /* bordes redondeados */
+    border-radius: 3px;
+}
+.link-hover:hover {
+    /* el color de fondo cuando el cursor pase por encima */
+    background-color: #1D3557;
+    /* tansicio de medio segundo */
+    transition: 0.5s;
 }
 /* estilo del contenedor principal */
 .container {
