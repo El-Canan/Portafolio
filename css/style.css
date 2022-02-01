@@ -7,31 +7,81 @@
 /* estilo por defecto para todo el cuerpo */
 body {
     font-family: sans-serif;
-    /* border: 1px solid black; */
+    /* color de fondo del cuerpo */
+    background-color: #f1faee;
+    /* relleno del cuerpo */
+    padding: 90px 20px 0;
 }
 /* estilo de la barra de navegacion */
+.nav-container {
+    /* color de fondo del contenedor de la barra de navegacion */
+    background-color: #457b9d;
+    /* alto de la barra de navegacion */
+    height: 60px;
+    /* ancho de la barra de navegacion */
+    width: 100%;
+    /* fijar la posicion superor ixquierda de la barra de navegacion */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border: 1px solid black;
+}
 .nav-menu {
+    /* tipo de visualizacion: flexible */
     display: flex;
-    justify-content: center;
+    /* Distribuir items uniformemente: El primer item al inicio, el último al final */
+    justify-content: space-between;
     border: 1px solid black;
 }
 .nav-list {
-    list-style: none;
+    /* tipo de visualizacion: flexible*/
     display: flex;
+    /* margen derecho */
+    margin-right: 40px;
+    /* quitamos los puntos de los item de la lista */
+    list-style: none;
+    border: 1px solid black;
+
 }
 .nav-item {
+    /* tamaño de texto */
+    font-size: 18px;
+    /* margenes laterales */
+    margin: 0 10px;
+    /* alto superior */
+    line-height: 60px;
+    /* transforma el texto en mayusculas */
+    text-transform: uppercase;
     border: 1px solid black;
+}
+.nav-logo {
+    /* tamaño de fuente */
+    font-size: 25px;
+    /* letras en negritas */
+    font-weight: bold;
+    /* relleno  laterales del logo*/
+    padding: 0 40px;
+    /* alto superior del logo */
+    line-height: 60px;
+    border: 1px solid black;
+}
+.nav-link {
+    /* color de texto de los enlaces */
+    color: #f1faee;
+    /* eliminamos la decoracion del texto */
+    text-decoration: none;
 }
 /* estilo del contenedor principal */
 .container {
     width: 90%;
     margin: auto;
-    border: 1px solid black;
+    background-color: #a8dadc;
+    /* border: 1px solid black; */
 }
 /* estilo deacerca */
 .acerca-container {
+    margin-top: 60px;
     border: 1px solid black;
-    
 }
 /* estilo de habilidades*/
 /* estilo de proyectos */
@@ -42,12 +92,13 @@ body {
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
-    background-color: lightslategrey;
+    background-color: #1D3557;
 }
 footer {
     /* background-color: red; */
     margin: auto;
     padding: 10px;
 }
+/* color rojo: e63946 */
 /* ------------------------------------------------------- */
 /* media query */
