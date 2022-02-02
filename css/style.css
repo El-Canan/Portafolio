@@ -1,11 +1,11 @@
 /* estilo globales */
 * {
     margin: 0px;
-    /* padding: 0px; */
     box-sizing: border-box;
 }
 /* estilo por defecto para todo el cuerpo */
 body {
+    /* fuente de la pagina */
     font-family: sans-serif;
     /* color de fondo del cuerpo */
     background-color: #f1faee;
@@ -31,7 +31,7 @@ body {
     /* Distribuir items uniformemente: El primer item al inicio, el último al final */
     justify-content: space-between;
     /* breakpoints */
-    max-width: 992px;
+    max-width: 1200px;
     /* margenes lateral centrado */
     margin: 0 auto;
 }
@@ -84,7 +84,7 @@ body {
     /* tansicio de medio segundo */
     transition: 0.5s;
 }
-.nav-boton {
+.nav-button {
     /* color del icono */
     color: #f1faee;
     /* quitar el fondo del boton */
@@ -94,9 +94,11 @@ body {
     /* tmaño del icono para el boton */
     font-size: 30px;
     /* relleno del icono */
-    padding: 0 20px;
+    padding: 0 40px;
     /* alto superior del icono */
-    line-height: 60px;
+    line-height: 65px;
+    /* cursor */
+    cursor: pointer;
     /* desaparece el icono en modo escritorio */
     display: none;
 }
@@ -143,7 +145,6 @@ footer {
         /* posicion */
         position: fixed;
         top: 60px;
-        left: 0;
         width: 100%;
         height: calc(100% - 60px);
         /* alineacion de los items */
@@ -152,6 +153,9 @@ footer {
         padding: 20px 0;
         /* barra deslizadora lateral */
         overflow-y: auto;
+        /* esconder el menu */
+        left: 100%;
+        transition: left 0.5s;
     }
     /* color de fondo al pasar el cursos por encima modo tablet */
     .link-hover:hover {
@@ -160,7 +164,14 @@ footer {
         /* resaltamos el color del texto */
         color: #457b9d;
     }
-    .nav-boton {
+    .nav-button {
+        /* se muestra el boton delmenu lateral */
         display: block;
+    }
+    .list-visible {
+        left: 0;
+    }
+    .nav-button:focus:not(:focus-visible) {
+        outline: none;
     }
 }
