@@ -1,0 +1,30 @@
+/* color rojo: e63946 */
+/* estilo globales */
+/* * {
+  margin: 0px;
+  box-sizing: border-box;
+} */
+/* estilo por defecto para todo el cuerpo */
+body {
+  /* fuente de la pagina */
+  font-family: sans-serif;
+  /* color de fondo del cuerpo */
+  background-color: #f1faee;
+  /* relleno del cuerpo */
+  padding: 90px 20px 0;
+}
+/* estilo del contenedor principal */
+.container {
+  width: 90%;
+  margin: auto;
+  background-color: #a8dadc;
+  /* border: 1px solid black; */
+}
+/* estilo deacerca */
+/* .acerca-container {
+  margin-top: 60px;
+  border: 1px solid black;
+} */
+/* estilo de habilidades*/
+/* estilo de proyectos */
+/* estilo de contacto */
