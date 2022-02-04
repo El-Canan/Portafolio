@@ -1,7 +1,7 @@
 /* estilo de la barra de navegacion */
 .nav-container {
   /* color de fondo del contenedor de la barra de navegacion */
-  background-color: #457b9d;
+  background-color: var(--nav-color);
   /* alto de la barra de navegacion */
   height: 60px;
   /* ancho de la barra de navegacion */
@@ -42,18 +42,25 @@
   width: max-content;
 }
 .nav-logo {
+  display: flex;
+  align-items: center;
+  /* font-weight: 500; */
   /* tamaño de fuente */
-  font-size: 25px;
+  font-size: 18px;
   /* letras en negritas */
-  font-weight: bold;
+  /* font-weight: bold; */
   /* relleno  laterales del logo*/
   padding: 0 40px;
   /* alto superior del logo */
   line-height: 60px;
 }
+.logotipo {
+  display: flex;
+  align-items: center;
+}
 .nav-link {
   /* color de texto de los enlaces */
-  color: #f1faee;
+  color: var(--body-color);
   /* eliminamos la decoracion del texto */
   text-decoration: none;
 }

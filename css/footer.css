@@ -1,11 +1,23 @@
 /* estilo del footer */
 .foot-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #1D3557;
+  /* color de fondo */
+  background-color: var(--footer-color);
+  /* fijar una posicion absoluta */
+  /* position: absolute;
+  posicion hacia el fondo de la pagina
+  bottom: 0;
+  ancho del 100% de la patalla
+  width: 100%; */
+  /* un relleno de 15 pixeles */
+  padding: 15px;
+  /* alineamos el texo al centro del contenedor */
+  text-align: center;
 }
 footer {
-  margin: auto;
-  padding: 10px;
+  /* estilo de la fuente */
+  font-style: italic;
+  /* grosor de la fuente */
+  font-weight: bold;
+  /* color de la fuente */
+  color: var(--font-container-color);
 }

@@ -1,4 +1,11 @@
-/* color rojo: e63946 */
+:root {
+  /* primer paleta de colores */
+  --nav-color: #457b9d;
+  --body-color: #a8dadc;
+  --font-container-color: #f1faee;
+  --footer-color: #1D3557;
+  --button-color: #e63946;
+}
 /* estilo globales */
 * {
   /* quitamos losmargenes */
@@ -11,15 +18,17 @@ body {
   /* fuente de la pagina */
   font-family: sans-serif;
   /* color de fondo del cuerpo */
-  background-color: #a8dadc;
+  background-color: var(--body-color);
   /* relleno del cuerpo */
-  /* padding: 90px 20px 0; */
+  /* display: grid;
+  min-height: 100vh;
+  grid-template-columns: auto 1fr auto; */
 }
 /* estilo del contenedor principal */
 .container {
   width: 90%;
   margin: auto;
-  background-color: #f1faee;
+  background-color: var(--font-container-color);
 }
 /* estilo deacerca */
 /* .acerca-container {
