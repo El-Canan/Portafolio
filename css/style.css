@@ -1,24 +1,25 @@
 /* color rojo: e63946 */
 /* estilo globales */
-/* * {
+* {
+  /* quitamos losmargenes */
   margin: 0px;
+  /* el relleno y borde estan al borde de la caja */
   box-sizing: border-box;
-} */
+}
 /* estilo por defecto para todo el cuerpo */
 body {
   /* fuente de la pagina */
   font-family: sans-serif;
   /* color de fondo del cuerpo */
-  background-color: #f1faee;
+  background-color: #a8dadc;
   /* relleno del cuerpo */
-  padding: 90px 20px 0;
+  /* padding: 90px 20px 0; */
 }
 /* estilo del contenedor principal */
 .container {
   width: 90%;
   margin: auto;
-  background-color: #a8dadc;
-  /* border: 1px solid black; */
+  background-color: #f1faee;
 }
 /* estilo deacerca */
 /* .acerca-container {

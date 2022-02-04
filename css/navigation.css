@@ -17,7 +17,7 @@
   /* Distribuir items uniformemente: El primer item al inicio, el último al final */
   justify-content: space-between;
   /* breakpoints */
-  max-width: 1200px;
+  max-width: 992px;
   /* margenes lateral centrado */
   margin: 0 auto;
 }

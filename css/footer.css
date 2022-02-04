@@ -1,13 +1,11 @@
 /* estilo del footer */
 .foot-container {
   width: 100%;
-  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   background-color: #1D3557;
 }
 footer {
-  /* background-color: red; */
   margin: auto;
   padding: 10px;
 }
