@@ -2,12 +2,8 @@
 .foot-container {
   /* color de fondo */
   background-color: var(--footer-color);
-  /* fijar una posicion absoluta */
-  /* position: absolute;
-  posicion hacia el fondo de la pagina
-  bottom: 0;
-  ancho del 100% de la patalla
-  width: 100%; */
+  /* ancho total */
+  width: 100%;
   /* un relleno de 15 pixeles */
   padding: 15px;
   /* alineamos el texo al centro del contenedor */

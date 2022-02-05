@@ -8,33 +8,21 @@
 }
 /* estilo globales */
 * {
-  /* quitamos losmargenes */
+  /* quitamos los margenes */
   margin: 0px;
+  /* quitar los relleno */
+  padding: 0px;
   /* el relleno y borde estan al borde de la caja */
   box-sizing: border-box;
 }
 /* estilo por defecto para todo el cuerpo */
 body {
-  /* fuente de la pagina */
-  font-family: sans-serif;
   /* color de fondo del cuerpo */
   background-color: var(--body-color);
-  /* relleno del cuerpo */
-  /* display: grid;
+  /* fuente de la pagina */
+  font-family: sans-serif;
+  /* posicion del cuerpo */
+  display: grid;
   min-height: 100vh;
-  grid-template-columns: auto 1fr auto; */
+  grid-template-rows: auto 1fr auto;
 }
-/* estilo del contenedor principal */
-.container {
-  width: 90%;
-  margin: auto;
-  background-color: var(--font-container-color);
-}
-/* estilo deacerca */
-/* .acerca-container {
-  margin-top: 60px;
-  border: 1px solid black;
-} */
-/* estilo de habilidades*/
-/* estilo de proyectos */
-/* estilo de contacto */
